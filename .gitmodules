@@ -1,0 +1,3 @@
+[submodule "lab/nestedinstall/vghetto-vsphere-with-kubernetes-external-nsxt-automated-lab-deployment"]
+	path = lab/nestedinstall/vghetto-vsphere-with-kubernetes-external-nsxt-automated-lab-deployment
+	url = git@github.com:lamw/vghetto-vsphere-with-kubernetes-external-nsxt-automated-lab-deployment.git
