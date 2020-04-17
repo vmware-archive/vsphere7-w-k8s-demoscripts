@@ -1,5 +1,7 @@
 # Enable Supervisor Cluster
 
+![](../../././images/enablesupervisor.png)
+
 Menu > Workload Management > Enable
 
 ![](../.././images/enable.png)

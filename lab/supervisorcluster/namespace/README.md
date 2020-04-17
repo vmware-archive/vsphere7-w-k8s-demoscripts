@@ -1,5 +1,7 @@
 # Create Namespace
 
+![](../.././images/namespace.png)
+
 Once Supervisor Cluster is enabled then we need to create a namespace. Vi Admins are going to create this namespace per product team. Vi admin can provide access to this namespace to dev teams and also apply storage and quota polices. Name your workspace as vsphere-k8-hol.
 
 

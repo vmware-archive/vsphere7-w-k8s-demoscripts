@@ -1,5 +1,7 @@
 # Access SupervisorCluster
 
+![](../.././images/supervisor1.png)
+
 If you are using a jumpbox then ssh into the jumbox to access clusters.
 ssh ubuntu@ip
 
