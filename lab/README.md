@@ -47,7 +47,7 @@
 
 ## Workload Cluster
 
-##### [1. Create Work Cluster](./workloadcluster/createworkloadcluster)
+##### [1. Create Workload Cluster](./workloadcluster/createworkloadcluster)
 ##### [2. Attach to TMC](./workloadcluster/attachclustertotmc)
 ##### [3. Install Fluent Bit](./workloadcluster/logging)
 ##### [4. Install Wavefront](./workloadcluster/wavefront)
