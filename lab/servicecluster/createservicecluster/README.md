@@ -1,20 +1,24 @@
-# Deploy Jumla App
+# Workload Cluster
 
-###### kubectl create namespace kubeapps
-###### helm repo update
-###### helm repo add bitnami https://charts.bitnami.com/bitnami
-###### helm install kubeapps bitnami/kubeapps -n kubeapps --set useHelm3=true --set frontend.service.type=LoadBalancer
-###### kubectl -n kubeapps get svc kubeapps
-![](../.././images/kubeapps.png)
-Kubeapps Access Control can be configured according to your needs but we will not dive into this topic here and just configure admin access.
+## Create Workload Cluster
 
-###### kubectl create serviceaccount kubeapps-operator
-###### kubectl create clusterrolebinding kubeapps-operator --clusterrole=cluster-admin --serviceaccount=default:kubeapps-operator
-###### kubectl get secret $(kubectl get serviceaccount kubeapps-operator -o jsonpath='{range .secrets[*]}{.name}{"\n"}{end}' | grep kubeapps-operator-token) -o jsonpath='{.data.token}' -o go-template='{{.data.token | base64decode}}' && echo
+Login as admin.
 
-Let's use the token we got from the last command to access kubeapps.
+kubectl vsphere login --insecure-skip-tls-verify --server your-wcp-server -u administrator@vsphere.local
 
+Username: administrator@vsphere.local
+PW: VMware1!
 
+Switch to the namespace we created.
+kubectl config use-context <namespace>
 
+Make sure to use the correct Storage Class that you created and Namespace in the manifest file.
 
+![](.././images/workloadcluster1.png)
 
+kubectl apply -f scripts/create-service-cluster.yaml
+
+SOMETIMES THE GUEST CLUSTER DOES NOT SHOW UP IN THE VSPHERE UI. 
+YOU MAY HAVE TO DELETE AND DO IT AGAIN.
+
+kubectl config use-context application-catalog
