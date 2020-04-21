@@ -19,7 +19,7 @@
 
 # Steps:
 
-## Installion
+## Installation
 
 ##### [1. Nested Install](./nestedInstall)
 
