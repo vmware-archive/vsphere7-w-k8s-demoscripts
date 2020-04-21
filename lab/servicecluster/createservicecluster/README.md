@@ -1,6 +1,4 @@
-# Workload Cluster
-
-## Create Service Cluster
+# Create Service Cluster
 
 Login as admin.
 
