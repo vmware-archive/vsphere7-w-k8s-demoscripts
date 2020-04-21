@@ -42,9 +42,8 @@
 ##### [1. Create Service Cluster](./servicecluster/createservicecluster)
 ##### [2. Attach to TMC](./servicecluster/attachclustertotmc)
 ##### [3. Integrate Application Catalog](./servicecluster/integrateapplicationcatalog)
-##### [4. Install Fluent Bit](./servicecluster/logging)
-##### [5. Install Elastic Search and Kibana](./servicecluster/EK)
-##### [6. Install Wavefront](./servicecluster/wavefront)
+##### [4. Install Elastic Search and Kibana](./servicecluster/EK)
+##### [5. Install Wavefront](./servicecluster/wavefront)
 
 ## Workload Cluster
 

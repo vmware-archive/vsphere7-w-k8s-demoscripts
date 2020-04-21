@@ -2,6 +2,13 @@
 
 ## Deploy fluent-bit
 
+Login as admin
+
+```bash
+kubectl vsphere login --insecure-skip-tls-verify --managed-cluster-name=application-catalog --server wcp.haas-435.pez.pivotal.io -u alana@vsphere.local
+```
+
+
 ```bash
 kubectl apply -f tkg-extensions/logging/fluent-bit/vsphere/00-fluent-bit-namespace.yaml
 kubectl apply -f tkg-extensions/logging/fluent-bit/vsphere/01-fluent-bit-service-account.yaml
