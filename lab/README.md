@@ -19,6 +19,11 @@
 
 # Steps:
 
+### CLIs
+###### kubectl
+###### tmc
+###### helm 3
+
 ## Installation
 
 ##### [1. Nested Install](./nestedInstall)
