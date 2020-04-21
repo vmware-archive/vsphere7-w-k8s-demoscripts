@@ -20,6 +20,7 @@ kubectl config use-context <namespace>
 Make sure to use the correct Storage Class that you created and Namespace in the manifest file.
 
 ![](../../images/workloadcluster1.png)
+
 `
 kubectl apply -f scripts/create-managed-cluster.yaml
 `
