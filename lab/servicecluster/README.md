@@ -2,21 +2,6 @@
 
 ![](.././images/tkg.png)
 
-To store the Guest Cluster Images we will need to create a Content Library.
-
-1. Navigate to Menu -> Content Libraries -> Create
-2. Set name as Kubernetes (case sensitive)
-3. Choose Subscribed Content Library and enter in https://wp-content.vmware.com/v2/beta/lib.json for the URL, and choose when needed
-![](.././images/contentlibrary.png)
-
-4. Click Yes to accept the certificate thumbprint.
-![](.././images/contentlibrary2.png)
-
-![](.././images/contentlibrary3.png)
-
-5. Choose a datastore to store your images.
-6. Click Finish
-
 ## Create Workload Cluster
 
 Login as admin.
