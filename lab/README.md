@@ -3,15 +3,15 @@
 ![](./images/supervisor-cluster1.png)
 
 # Business Context:
-
+TODO
 
 ### VI Admin Persona:
 
-
+TODO
 
 ### Developer's Persona:
 
-
+TODO
 
 ![](./images/supervisor-cluster2.png)
 
