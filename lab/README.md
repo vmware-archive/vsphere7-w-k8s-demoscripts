@@ -5,7 +5,7 @@
 # Business Context:
 
 
-### Vi Admin Persona:
+### VI Admin Persona:
 
 
 
