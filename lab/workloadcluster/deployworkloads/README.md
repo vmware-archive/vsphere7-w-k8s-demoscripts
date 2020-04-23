@@ -5,7 +5,8 @@ Wordpress needs a MySql database. We will create a mysql database using Tanzu Ap
 ##### Login to KubeApps. Dev Team should have view rights on Application catalog cluster.
 
 # Deploy Mysql
-```
+
+```bash
 kubectl vsphere login --insecure-skip-tls-verify --managed-cluster-name=application-catalog --server wcp.haas-435.pez.pivotal.io -u cody@vsphere.local
 ```
 
@@ -26,18 +27,14 @@ Change Namespace from top menu and select mysql.
 Click Submit.
 
 Login as Cody on application catalog cluster:
-```
+
+```bash
 vsphere login --insecure-skip-tls-verify --managed-cluster-name=application-catalog --server wcp.haas-435.pez.pivotal.io -u cody@vsphere.local
-```
-```
 kubectl config use-context application-catalog
-```
-```
 kubectl get svc -n mysql
-```
 
 Login as Cody on Wordpress cluster:
-```
+
 vsphere login --insecure-skip-tls-verify --managed-cluster-name=wordpress --server wcp.haas-435.pez.pivotal.io -u cody@vsphere.local
 ```
 
