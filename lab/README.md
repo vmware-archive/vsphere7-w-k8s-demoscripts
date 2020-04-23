@@ -28,7 +28,7 @@ TODO
 > 1. [Nested Install](./nestedinstall)
 > 2. [Request OneCloud setup if needed](./onecloud)
 
-### 2. Supervisor Cluster
+## 2. Supervisor Cluster
 
 > 	1. [Enable Supervisor Cluster](./supervisorcluster/enablecluster)
 > 	2. [Enable Harbor](./supervisorcluster/enableharbor)
@@ -38,7 +38,7 @@ TODO
 > 	6. [Access Supervisor Cluster](./supervisorcluster/accesscluster)
 
 
-## 3. Service Cluster
+## 3. Application Catalog Cluster
 
 > 1. [Create Service Cluster](./servicecluster/createservicecluster)
 > 2. [Attach to TMC](./servicecluster/attachclustertotmc)
