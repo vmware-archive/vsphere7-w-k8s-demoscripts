@@ -26,7 +26,7 @@ TODO
 
 ## Installation
 
-##### [1. Nested Install](./nestedInstall)
+##### [1. Nested Install](./nestedinstall)
 
 ## Supervisor Cluster
 

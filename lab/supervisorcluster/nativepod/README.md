@@ -10,9 +10,11 @@ Switch your context to the namespace you have created.
 
 ## Deploy MySql
 
-kubectl apply -f ../.././scripts/mysql
+```bash
+kubectl apply -f scripts/mysql
 
 kubectl get pods -l app=mysql
+```
 
 ![](../.././images/mysql1.png)
 
@@ -20,27 +22,27 @@ kubectl get pvc
 
 ![](../.././images/mysql1.png)
 
-`kubectl run mysql-client --image=mysql:5.7 -i --rm --restart=Never -- mysql -h mysql-0.mysql <<EOF`
-
-`CREATE DATABASE test;`
-
-`CREATE TABLE test.messages (message VARCHAR(250));`
-`NSERT INTO test.messages VALUES ('hello');`
-
-`EOF`
+```bash
+kubectl run mysql-client --image=mysql:5.7 -i --rm --restart=Never -- mysql -h mysql-0.mysql <<EOF
+CREATE DATABASE test;
+CREATE TABLE test.messages (message VARCHAR(250));
+INSERT INTO test.messages VALUES ('hello');
+EOF
 
 kubectl run mysql-client --image=mysql:5.7 -i -t --rm --restart=Never -- mysql -h mysql-read -e "SELECT * FROM test.messages"
 
+```
+
 ![](../.././images/mysql3.png)
 
-kubectl delete -f ../.././scripts/mysql
+`kubectl delete -f scripts/mysql`
 
 ## Deploy Wordpress
 
-
-kubectl apply -f ../.././scripts/wordpress/deployment.yaml
-
+```bash
+kubectl apply -f scripts/wordpress/deployment.yaml
 kubectl get svc
+```
 
 ![](../.././images/wordpress.png)
 

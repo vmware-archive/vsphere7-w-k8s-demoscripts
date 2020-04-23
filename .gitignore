@@ -1,2 +1,3 @@
 .DS_Store
 **/tkg-extensions/**
+kubeconfig
